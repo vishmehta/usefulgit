@@ -15,3 +15,7 @@ git config --global user.name $USERNAME
 git config --global push.default simple
 
 ###Colours
+git config color.branch auto
+git config color.diff auto
+git config color.interactive auto
+git config color.status auto
