@@ -10,6 +10,28 @@
 <body>
     <h1>Commands</h1>
 
+    <h3>Setting up the project and make your first commit</h3>
+    <code>
+        1. Create a fork of the repository
+        2. Clone the forked repository
+            git clone https://github.com/vishmehta/repo.git
+        3. If you get "SSL Certificate problem" verify that the CA cert is OK
+            export GIT_SSL_NO_VERIFY=true
+        4. Add the upstream server
+            git revert add upstream https://github.com/vishmehta/repo.git
+        5. Make sure you have the latest changes from upstream
+            git fetch upstream
+        6. Rebase your fork
+            git rebase upstream/master
+        7. Make your changes
+        8. See the status of the changes
+            git status -s
+        9. Commit the changes
+            git commit -a -m "Commit Message"
+        10. Push the changes to the repositor
+            git push
+    </code>
+
     <h3>General</h3>
     <code>
         # shows status of your local repository
@@ -73,6 +95,18 @@
         git reset --soft HEAD~1
     </code>
 
+    <h3>Branching</h3>
+    <code>
+        # create the branch locally
+        git branch "new branch"
+
+        # push the branch to the remote
+        git push origin "new branch"
+
+        # switch to the new branch
+        git checkout "new branch"
+    </code>
+
     <h3>Switch between master and a branch</h3>
     <code>
         # switch to a branch
@@ -94,6 +128,23 @@
 
         # Or pull local commits from other user
         git pull hostname:/location/gitrepo master
+    </code>
+
+    <h3>Forking</h3>
+    <code>
+        # Create a fork
+        1. Go to the electric repo in Github and click the 'Fork' button in the top right corner
+        2. Create a form in your own repo (e.g. username/repo)
+        3. Checkoout this form in the usual way (e.g. git checkout https://github.com/vishmehta/repo.git)
+        4. (Optional) Create a feature branch for your changes
+
+        # Update existing fork with changes made on master
+        1. as a one off, add the master as a remote
+            git remote add upstream https://github.com/vishmehta/repo.git
+        2. Fetch the upstream changes
+            git fetch upstream
+        3. Rebase the form with the upstream changes
+            git rebase upstream/master
     </code>
 
     <h3>Other</h3>

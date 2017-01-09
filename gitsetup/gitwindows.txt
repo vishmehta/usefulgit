@@ -1,0 +1,13 @@
+
+
+Install Git
+
+Change Your Environment Variables (Properties -> Advanced System Settings -> Environment Variables -> System Variables)
+ - GIT_HOME should be pointed to the root folder of GIT
+
+Generate SSH Keys
+XXX
+
+Update git settings
+XXX usefulgit/gitsetup/gitsettings.sh
+
