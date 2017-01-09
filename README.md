@@ -5,7 +5,8 @@ Useful Git
  * Try Git - https://try.github.io/
  
 ### Git Setup
- * https://github.com/vishmehta/usefulgit/blob/master/gitsetup/configuregit.sh
+ * Windows - https://github.com/vishmehta/usefulgit/blob/master/gitsetup/gitwindows.txt
+ * Linux - https://github.com/vishmehta/usefulgit/blob/master/gitsetup/gitlinux.sh
 
 ### Git Config
  * Example `.gitconfig` - https://github.com/vishmehta/usefulgit/blob/master/gitconfig/.gitconfig
