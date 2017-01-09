@@ -7,19 +7,99 @@
 <body>
     <h1>Commands</h1>
 
+    <h3>General</h3>
+    <code>
+        # shows status of your local repository
+        git status
+
+        # show all remotes
+        git remote -v
+
+        # diff between local and remote
+        git diff -stat origin/master
+        git push --dry-run
+        git difftool origin/master
+
+        # deep clean
+        git clean -f -d
+
+        # revert an older check in
+        git revert "hash"
+
+        # create a local branch
+        git checkout -b your_branch
+        git push -u origin your_branch
+    </code>
+
+    <h3>Stashing</h3>
+    <code>
+        git stash
+        git stash save "optional-name"
+        git stash apply
+        git stash pop
+        git stash list
+        git stash show "stash-name" -p
+        git stash drop "stash-name"
+        git stash clear
+    </code>
+
     <h3>Config</h3>
     <code>
-    # shows all settings
-    git config --list
+        # shows all settings
+        git config --list
 
-    # shows system settings
-    git config --list --system
+        # shows system settings
+        git config --list --system
 
-    # shows user settings
-    git config --list --global
+        # shows user settings
+        git config --list --global
 
-    # shows project settings
-    git config --list --local
+        # shows project settings
+        git config --list --local
+    </code>
+
+    <h3>Undo Last Commit</h3>
+    <code>
+        # nuke last commit
+        git reset --hard HEAD~1
+
+        # undo the commit but keep your changes
+        git reset HEAD~1
+
+        # undo your commit but leave your files and your index
+        git reset --soft HEAD~1
+    </code>
+
+    <h3>Switch between master and a branch</h3>
+    <code>
+        # switch to a branch
+        git checkout branch_repo
+
+        # pull from branch
+        git pull origin branch_repo
+
+        # switch back to master branch
+        git checkout master
+    </code>
+
+    <h3>Send a patch to another dev</h3>
+    <code>
+        # create a diff between two revisions (git log)
+        git diff abcdefrev1 abcdefrev2 > patch.diff
+        # send the patch.diff to the developer and let him git-apply it to his workspace
+        git apply patch.diff
+
+        # Or pull local commits from other user
+        git pull hostname:/location/gitrepo master
+    </code>
+
+    <h3>Other</h3>
+    <code>
+        # merging - put on sunglasses first .vimdiff seems to be the default. See <a href="">here</a> for help.
+        git mergetool
+
+        # push remote tag
+        git push --tags
     </code>
 </body>
 </html>
