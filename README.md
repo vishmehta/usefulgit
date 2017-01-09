@@ -9,20 +9,6 @@ Useful Git
 
 ### Git Config
  * Example `.gitconfig` - https://github.com/vishmehta/usefulgit/blob/master/gitconfig/.gitconfig
- * Git Config Commands
- ```
-# shows all settings
-git config --list
-
-# shows system settings
-git config --list --system
-
-# shows user settings
-git config --list --global
-
-# shows project settings
-git config --list --local
-```
 
 ### Git Commands
  * Commands -   https://cdn.rawgit.com/vishmehta/usefulgit/master/gitcommands/commands.html
