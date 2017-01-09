@@ -7,25 +7,27 @@
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
 [alias]   
-        cam = commit -am
-        ps = push
-        pu = push
-        p = pull
-        s = status
-        d = diff
+    cam = commit -am
+    ps = push
+    pu = push
+    p = pull
+    s = status
+    d = diff
 [color]
-        ui = true
+    ui = true
 [color "branch"]
-        current = yellow bold
-        local = green bold
-        remote = cyan bold
+    current = yellow bold
+    local = green bold
+    remote = cyan bold
 [color "diff"]
-        meta = yellow bold
-        frag = magenta bold
-        old = red bold
-        new = green bold
-        whitespace = red reverse
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
 [color "status"]
-        added = green bold
-        changed = yellow bold
-        untracked = red bold
+    added = green bold
+    changed = yellow bold
+    untracked = red bold
+[core]
+    autocrlf = input
