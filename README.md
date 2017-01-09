@@ -11,7 +11,7 @@ Useful Git
  * Example `.gitconfig` - https://github.com/vishmehta/usefulgit/blob/master/gitconfig/.gitconfig
 
 ### Git Commands
- * Commands -   https://cdn.rawgit.com/vishmehta/usefulgit/master/gitcommands/commands.html
+ * Commands - https://rawgit.com/vishmehta/usefulgit/master/gitcommands/commands.html
 
 ### Git Bash Alias
  * Example `.bashrc` Aliases - https://github.com/vishmehta/bashrc/blob/master/.gitaliases
