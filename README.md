@@ -7,7 +7,8 @@ Useful Git
 ### Git Setup
  * Windows - https://github.com/vishmehta/usefulgit/blob/master/gitsetup/gitwindows.txt
  * Linux - https://github.com/vishmehta/usefulgit/blob/master/gitsetup/gitlinux.sh
-
+ * SSH Keys - https://help.github.com/articles/generating-an-ssh-key/ 
+ 
 ### Git Config
  * Example `.gitconfig` - https://github.com/vishmehta/usefulgit/blob/master/gitconfig/.gitconfig
 
